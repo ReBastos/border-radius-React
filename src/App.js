@@ -1,6 +1,9 @@
 import {useState} from 'react'
 import './App.css';
-import BoxRadius from './components/box';
+import BoxRadius from './components/BoxRadius';
+import CssGenerator from './components/CssGenerator';
+import RangeInput from './components/RangeInput';
+
 
 function App() {
 
@@ -9,34 +12,10 @@ function App() {
   const [bottomLeft, setBottomLeft] = useState(0);
   const [bottomRight, setBottomRight] = useState(0);
 
-  function heldBorders(evt) {
-    
-    if(evt.target.id === 'top-left') {
-      setTopLeft(evt.target.value);
-      console.log(evt.target.value);
-    }
-
-    if(evt.target.id === 'top-right') {
-      setTopRight(evt.target.value);
-      console.log(evt.target.value);
-    }
-
-    if(evt.target.id === 'bottom-left') {
-      setBottomLeft(evt.target.value);
-        console.log(evt.target.value);
-    }
-
-    if(evt.target.id === 'bottom-right') {
-      setBottomRight(evt.target.value);
-      console.log(evt.target.value);
-
-    }
-
-    
-  }
 
   return (
    <>
+   <main>
    
    <BoxRadius
    topLeft = {topLeft}
@@ -44,15 +23,25 @@ function App() {
    bottomLeft = {bottomLeft}
    bottomRight = {bottomRight}
    />
+   
 
    <div className='inputs'>
+      <RangeInput value={topLeft} setValue={setTopLeft}/>
+      <RangeInput value={topRight} setValue={setTopRight}/>
+      <RangeInput value={bottomLeft} setValue={setBottomLeft}/>
+      <RangeInput value={bottomRight} setValue={setBottomRight}/>
+   
 
-     <input type='range' id='top-left' value={topLeft} onChange={heldBorders}></input>
-     <input type='range' id='top-right' value={topRight} onChange={heldBorders}></input>
-     <input type='range' id='bottom-left' value={bottomLeft} onChange={heldBorders}></input>
-     <input type='range' id='bottom-right' value={bottomRight} onChange={heldBorders}></input>
+   <CssGenerator 
+   topLeft = {topLeft}
+   topRight = {topRight}
+   bottomLeft = {bottomLeft}
+   bottomRight = {bottomRight}
+   />
 
-   </div>
+</div>
+
+  </main> 
    </>
   );
 }

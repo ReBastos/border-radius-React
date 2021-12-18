@@ -1,13 +1,12 @@
 import './style.css'
+import generateBorderRadius from '../utils/generateBorderRadius';
 
 const BoxRadius = ({topLeft, topRight, bottomLeft, bottomRight}) => {
-
-    let valorBorderRadius = ` ${topLeft}% ${topRight}% ${bottomLeft}% ${bottomRight}%`;
 
     return(
         <>
         <div id="box"
-        style={{borderRadius:  valorBorderRadius}}
+        style={{borderRadius:  generateBorderRadius(topLeft, topRight, bottomLeft, bottomRight)}}
         ></div>
         </>
     )
