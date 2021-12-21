@@ -1,6 +1,8 @@
 # Border-Radius Previewer
 
-> The objective of this project is to help Web Developers to create complex shapes to your components, without needing to try a diferent value of broder-radius at each corner of you component.
+<img>
+
+> A simple way to mold complex shapes to your components, without needing to try a diferent value of broder-radius at each corner of it.
 
 ## How Doe It Work
 
