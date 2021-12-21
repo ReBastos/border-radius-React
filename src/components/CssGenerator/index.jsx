@@ -1,4 +1,5 @@
 import generateBorderRadius from "../utils/generateBorderRadius"
+import './style.css'
 
 const CssGenerator = ({
     topLeft,
@@ -8,10 +9,16 @@ const CssGenerator = ({
 
 }) => {
 
+    function copyCSS() {
+        navigator.clipboard.writeText(`border-radius: ${generateBorderRadius(topLeft, topRight, bottomLeft, bottomRight)};`);
+        alert('Copiado com Sucesso');
+    
+    }
 
     return(
-        <div>
-        <p> border-radius: {generateBorderRadius(topLeft, topRight, bottomLeft, bottomRight)}</p>
+        <div className="cssGenerator">
+        <button id="copyCSS" onClick={copyCSS}>Copy</button>
+        <p id="cssText"> border-radius: {generateBorderRadius(topLeft, topRight, bottomLeft, bottomRight)}</p>
         </div>
     )
 

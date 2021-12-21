@@ -15,6 +15,7 @@ function App() {
 
   return (
    <>
+   <h1 className='titlePG'>Border-Radius Previewer</h1>
    <main>
    
    <BoxRadius
@@ -32,13 +33,14 @@ function App() {
       <RangeInput value={bottomRight} setValue={setBottomRight}/>
    
 
+    
    <CssGenerator 
    topLeft = {topLeft}
    topRight = {topRight}
    bottomLeft = {bottomLeft}
    bottomRight = {bottomRight}
    />
-
+    
 </div>
 
   </main> 
