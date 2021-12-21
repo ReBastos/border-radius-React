@@ -10,16 +10,16 @@ main {
   align-items: center;
   justify-content: space-between;
   width: 300px;
-  box-shadow:  0px 0px 38px #bebebe,
-             0px 0px 38px #ffffff;
+  box-shadow:  0px 0px 15px #bebebe,
+             0px 0px 15px #ffffff;
   padding: 30px;
   height: 200px;
   border-radius: 20px;
 }
 
 .titlePG {
-  box-shadow:  0px 0px 38px #bebebe,
-             0px 0px 38px #ffffff;
+  box-shadow:  0px 0px 15px #bebebe,
+             0px 0px 15px #ffffff;
 color: rgb(39, 39, 65);
 display: flex;
 align-items: center;
