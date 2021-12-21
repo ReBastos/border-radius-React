@@ -1,10 +1,8 @@
 # Border-Radius Previewer
 
+> A simple way to mold complex shapes to your components, without needing to try a different value of broder-radius at each corner of it.
 
-
-> A simple way to mold complex shapes to your components, without needing to try a diferent value of broder-radius at each corner of it.
-
-## How Doe It Work
+## How Does It Work
 
 <img src='screenshots/screenshot1.png' width='500px'><br>
 To create a complex shape, you only need to change the values in the range inputs at the right and see how the component box at the left shapes.<br>
