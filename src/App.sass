@@ -1,0 +1,65 @@
+@mixin boxOutset
+ box-shadow:  0px 0px 15px #bbcad3
+
+@mixin boxInset
+ box-shadow: inset 0px 0px 10px #bababa
+  
+main 
+  display: flex
+  gap: 130px
+  align-items: center
+
+
+.inputs
+ display: flex
+ flex-direction: column
+ align-items: center
+ justify-content: space-between
+ width: 300px
+ padding: 30px
+ height: 200px
+ border-radius: 20px
+ @include boxOutset
+ 
+
+.titlePG
+ color: rgb(39, 39, 65)
+ display: flex
+ align-items: center
+ justify-content: center
+ height: 70px
+ text-align: center
+ border-radius: 20px
+ @include boxOutset
+
+#box 
+ width: 300px
+ height: 300px
+ border: none
+ @include boxOutset
+
+.cssGenerator
+ height: 70px
+ width: 300px
+ padding: 10px
+ display: flex
+ flex-direction: column
+ justify-content: center
+ border-radius: 15px
+ @include boxInset
+
+
+.cssGenerator p
+ margin-bottom: 0
+
+
+#copyCSS 
+ width: 70px
+ background: none
+ border: none   
+ cursor: pointer
+ border-radius: 5px
+ @include boxOutset
+
+input 
+ width: 300px

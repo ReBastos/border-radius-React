@@ -1,4 +1,3 @@
-import './style.css'
 
 const RangeInput = ({value, setValue}) => {
 

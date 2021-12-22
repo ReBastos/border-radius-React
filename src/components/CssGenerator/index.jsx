@@ -1,5 +1,4 @@
 import generateBorderRadius from "../utils/generateBorderRadius"
-import './style.css'
 
 const CssGenerator = ({
     topLeft,
